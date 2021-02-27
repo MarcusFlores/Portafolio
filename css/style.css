@@ -378,7 +378,7 @@ section{
   text-decoration: none;
 }
 
-@media (max-width: 991px) {
+@media only screen and(max-width: 991px) {
   header,
   header.sticky{
     padding: 10px 20px;
@@ -471,7 +471,7 @@ section{
     margin-bottom: 30px;
   }
 }
-@media (max-width: 600px) {
+@media only screen and  (max-width: 600px ) {
   header,
   header.sticky{
     padding: 10px 20px;
@@ -564,7 +564,7 @@ section{
     margin-bottom: 30px;
   }
 }
-@media (max-width: 400px) {
+@media only screen and(max-width: 400px) {
   header,
   header.sticky{
     padding: 10px 20px;
