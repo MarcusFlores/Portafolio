@@ -1,12 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	<h1>HOla mundo</h1>
-</body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creamos paginas web profecionales para hacer crecer tu negocio, con las tecnologias más nuevas cmo React,Ruby on Rails, JavaScript">
+    <meta name="keywords" content="Creacion de paginas web, e-commerce, paginas web sencillas, hosting, dominios">
+  	<title>Creacion de paginas web profecionales y a bajo costo|Ks-Tech</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  	<link rel="stylesheet" href="css/indexStyle.css">
+    <link rel="icon" href="image/KS-TECHlogo.png">
+    <link rel="stylesheet" href="./css/chat.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <!--Animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/CSS?family=Quicksand" rel="stylesheet">
+    <!--Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/release/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="container">
+        <div class="navbar">
+          <img src="image/KS-TECHlogo.png" class="logo" alt="paginas web">
+          <nav>
+            <ul id="menuList">
+              <li> <a href="#conocenos">Conocenos</a></li>
+              <li> <a href="#nosotros">Un poco de nosotros</a></li>
+              <li> <a href="#galeria">Galeria</a></li>
+            </ul>
+          </nav>
+          <img src="image/menu.png" class="menu-icon" onclick="togglemenu()" alt="menu kstech">
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <h2>Las mejores web<br>para tu empresa</h2>
+            <h3>Hechas por profesionales</h3>
+            <p>(Las mas baratas del mercado)</p>
+            <h4>Desde $4300 (Incluye dominio y hosting)</h4>
+            <button type="button"><a href="#contrata" style="text-decoration: none; color: white;">¡Contrata ahora!</a></button>
+          </div>
+          <div class="col-2">
+            <img src="image/paginaP.jpg" class="controller" alt="Dominios de pagina web">
+            <div class="color-box"></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="letras" id="nosotros">
+        <p class="text">KS-TECH Nacio a partir de querer hacer un mundo mas tecnologico para la humanidad y a la vez empezando por darle a las medianas y pequeñas empresas un sitio web donde ellos puedan comunicarse con sus clientes o ya sea poder vender sus productos a traves de portales web con formas de pago diferentes, como siempre lo hemos dicho Somos una empresa que sigue fielmente sus principios de privacidad, innovación y desarrollo, siempre aplicando la tecnología para hacer nuestras vidas mas sencillas y mejores. Hacer paginas web con efectos como este es lo nuestro :)</p>
+      </section>
+
+      <section class="body" id="galeria">
+        <div class="img-slider">
+          <div class="slide active">
+            <img src="image/paginaP.jpg" class="img img-responsive" alt="">
+            <div class="info">
+              <h2 class="h2" style="border-radius: 8px; background: black; opacity: 0.5;">Plantilla para tu empresa o negocio</h2>
+              <p class="p" style="border-radius: 8px; background: black; opacity: 0.5;">La manera más sencilla y económica de llegar a tus clientes </p>
+              <button type="button"><a href="paginas/pagina1.html" style="text-decoration: none; color: white;">Ir a la pagina</a></button>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="image/paginaE.jpg" class="img" alt="">
+            <div class="info">
+              <h2 class="h2">Plantilla para tu empresa o negocio</h2>
+              <p class="p">La manera más sencilla y económica de llegar a tus clientes</p>
+              <button type="button"><a href="paginas/WebSite2.html" style="text-decoration: none; color: white;">Ver pagina</a></button>
+            </div>
+          </div>
+          <div class="navigation">
+            <div class="boton active"></div>
+            <div class="boton"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cuerpo" id="contrata">
+        <div class="contenedor">
+          <h1 class="elLogo"><span class="contacto">Co</span>ntactanos</h1>
+          <div class="contact-wrapper">
+            <div class="contact-form">
+              <h3>Contactanos</h3>
+              <form class="" action="php/correo.php" method="post">
+                <p>
+                  <label for="nombreCompleto">Nombre completo</label>
+                  <input type="text" name="nombreCompleto" required id="nombreCompleto">
+                </p>
+                <p>
+                  <label>E-mail</label>
+                  <input type="email" name="email" required>
+                </p>
+                <p>
+                  <label>Telefono</label>
+                  <input type="tel" name="telefono" required>
+                </p>
+                <p>
+                  <label>Asunto</label>
+                  <input type="email" name="asunto" required>
+                </p>
+                <p class="block">
+                  <label>Mensaje</label>
+                  <textarea name="mensaje" rows="3" required></textarea>
+                </p>
+                <p class="block">
+                  <button class="boton-form" type="submit">Enviar</button>
+                </p>
+              </form>
+            </div>
+            <div class="contact-info">
+              <h4>Mas información</h4>
+              <ul>
+                <li><i class="fa fa-facebook"><a href="https://www.facebook.com/KronosTechMX" style="text-decoration: none; color: white;"> Aqui encontraras nuestro facebook</a></i></li>
+                <li><i class="fa fa-twitter"><a href="https://twitter.com/KSTECHMX" style="text-decoration: none; color: white;"> Aqui encontraras nuestro twitter</a></i></li>
+                <li><i class="fa fa-instagram"><a href="https://www.instagram.com/kronostechnologymx/" style="text-decoration: none; color: white;"> Aqui encontraras nuestro instagram</a></i></li>
+                <li><i class="fa fa-envelope-o"> kron0os955@gmail.com</i></li>
+              </ul>
+              <p>
+                En este formulario podras poner tu telefono, correo electronico, nombre y un mensaje. De esta manera nos haras saber tus pedidos ya que llegaran directo a nosotros :)
+              </p>
+              <p>Kronos Technology Mx (KS-TECH)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+            <div class="skew-arriba"></div>
+           <div class="deg-footer"></div>
+
+           <div class="ejeZfooter">
+           <div class="footer-content">
+            <div class="footer-title">
+              <h2>Inovacion, estilo y desarrollo</h2>
+              <hr>
+            </div>
+
+            <div class="footer-text">
+              <p>&copy; Diseñado por KS-TECH</p>
+            </div>
+
+           </div>
+         </div>
+    </footer>
+    <!-- chatbot -->
+    <div class="chatbox">
+      <div class="chatbox__support">
+          <div class="chatbox__header">
+              Chat en linea!
+          </div>
+          <div class="chatbox__messages">
+              <div>
+                  <div class="messages__item messages__item--visitor">
+                      Hola!
+                  </div>
+                  <div class="messages__item messages__item--operator">
+                      ¿Qué necesitas?
+                  </div>
+                  .<div class="messages__item messages__item--typing">
+                      <span class="messages__dot"><i class="fas fa-circle"></i></span>
+                      <span class="messages__dot"><i class="fas fa-circle"></i></span>
+                      <span class="messages__dot"><i class="fas fa-circle"></i></span>
+                  </div>
+              </div>
+          </div>
+          <div class="chatbox__footer">
+              <input type="text" placeholder="¡Escribe tu mensaje!" class="chatbox__footer-text">
+              <button><i class="fas fa-paper-plane"></i></button>
+          </div>
+      </div>
+      <div class="chatbox__button">
+          <button></button>
+      </div>
+  </div>
+
+    <!-- fin del chatbot -->
+    <script src="./js/Chat.js"></script>
+    <script src="/js/app.js"></script>
+      <script type="text/javascript">
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+          if(menuList.style.maxHeight == "0px"){
+            menuList.style.maxHeight = "130px";
+          }
+          else{
+            menuList.style.maxHeight = "0px";
+          }
+        }
+      </script>
+
+      <script src="js/anime.min.js"></script>
+
+      <script type="text/javascript">
+        const text = document.querySelector('.text');
+        text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+        const animation = anime.timeline({
+          targets : '.text span',
+          easing : 'easeInOutExpo',
+          loop : true,
+        });
+
+        animation
+        .add({
+          rotate : function(){
+            return anime.random(-360,360)
+          },
+          translateX : function(){
+            return anime.random(-500,500)
+          },
+          translateY : function(){
+            return anime.random(-500,500)
+          },
+          duration : 5000,
+          delay : anime.stagger(20),
+        })
+
+        .add({
+          rotate : 0,
+          translateX : 0,
+          translateY : 0,
+          duration : 5000,
+          delay : anime.stagger(20),
+        })
+      </script>
+
+      <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide');
+        var btns = document.querySelectorAll('.boton');
+        let currentSlide = 1;
+
+        var manualNav = function(manual){
+          slides .forEach((slide) => {
+            slide.classList.remove('active');
+
+            btns.forEach((btn) => {
+              btn.classList.remove('active');
+            });
+          });
+
+          slides[manual].classList.add('active');
+          btns[manual].classList.add('active');
+        }
+
+        btns.forEach((btn, i) => {
+          btn.addEventListener("click", () => {
+            manualNav(i);
+            currentSlide = i;
+          });
+        });
+
+        var repeat = function(activeClass){
+          let active = document.getElementsByClassName('active');
+          let i = 1;
+
+          var repetidor = () => {
+            setTimeout(function(){
+              [...active].forEach((activeSlide) => {
+                activeSlide.classList.remove('active')
+              });
+
+
+              slides[i].classList.add('active');
+              btns[i].classList.add('active');
+              i++;
+
+              if (slides.length == i) {
+                i = 0;
+              }
+              if (i >= slides.length) {
+                return;
+              }
+              repetidor();
+            }, 10000);
+          }
+          repetidor();
+        }
+        repeat();
+      </script>
+
+  </body>
 </html>
