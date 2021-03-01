@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   	<link rel="stylesheet" href="css/indexStyle.css">
     <link rel="icon" href="image/KS-TECHlogo.png">
+    <link rel="stylesheet" href="./css/chat.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <!--Animate css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <!--Google fonts-->
@@ -55,7 +57,7 @@
             <img src="image/paginaP.jpg" class="img img-responsive" alt="">
             <div class="info">
               <h2 class="h2" style="border-radius: 8px; background: black; opacity: 0.5;">Plantilla para tu empresa o negocio</h2>
-              <p class="p" style="border-radius: 8px; background: black; opacity: 0.5;">La manera más sencilla y económica de llegar a tus clientes</p>
+              <p class="p" style="border-radius: 8px; background: black; opacity: 0.5;">La manera más sencilla y económica de llegar a tus clientes </p>
               <button type="button"><a href="paginas/pagina1.html" style="text-decoration: none; color: white;">Ir a la pagina</a></button>
             </div>
           </div>
@@ -141,7 +143,40 @@
            </div>
          </div>
     </footer>
+    <!-- chatbot -->
+    <div class="chatbox">
+      <div class="chatbox__support">
+          <div class="chatbox__header">
+              Chat en linea!
+          </div>
+          <div class="chatbox__messages">
+              <div>
+                  <div class="messages__item messages__item--visitor">
+                      Hola!
+                  </div>
+                  <div class="messages__item messages__item--operator">
+                      ¿Qué necesitas?
+                  </div>
+                  .<div class="messages__item messages__item--typing">
+                      <span class="messages__dot"><i class="fas fa-circle"></i></span>
+                      <span class="messages__dot"><i class="fas fa-circle"></i></span>
+                      <span class="messages__dot"><i class="fas fa-circle"></i></span>
+                  </div>
+              </div>
+          </div>
+          <div class="chatbox__footer">
+              <input type="text" placeholder="¡Escribe tu mensaje!" class="chatbox__footer-text">
+              <button><i class="fas fa-paper-plane"></i></button>
+          </div>
+      </div>
+      <div class="chatbox__button">
+          <button></button>
+      </div>
+  </div>
 
+    <!-- fin del chatbot -->
+    <script src="./js/Chat.js"></script>
+    <script src="/js/app.js"></script>
       <script type="text/javascript">
         var menuList = document.getElementById("menuList");
         menuList.style.maxHeight = "0px";
